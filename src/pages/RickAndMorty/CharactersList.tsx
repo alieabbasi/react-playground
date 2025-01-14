@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import { useCharactersListLogic } from "../hooks/useCharactersListLogic";
-import CharacterSearch from "../components/CharacterSearch";
+import { useCharactersListLogic } from "../../hooks/useCharactersListLogic";
+import CharacterSearch from "../../components/CharacterSearch";
 import { useState } from "react";
 
 export default function CharactersList() {
@@ -31,7 +31,7 @@ export default function CharactersList() {
             }}
           >
             {data?.characters?.results?.map((character) => (
-              <Link to={`/${character.id}`} key={character.id}>
+              <Link to={`/rick-and-morty/${character.id}`} key={character.id}>
                 <img
                   src={character.image}
                   alt={character.name}

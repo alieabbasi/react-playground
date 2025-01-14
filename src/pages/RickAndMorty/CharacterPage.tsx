@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { useCharacterLogic } from "../hooks/useCharacterLogic";
+import { useCharacterLogic } from "../../hooks/useCharacterLogic";
 
 export default function CharacterPage() {
   const { id } = useParams();
