@@ -1,0 +1,69 @@
+.pacman {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.upper-jaw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom center;
+  animation: upper-jaw 1s infinite;
+}
+
+.lower-jaw {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: top center;
+  animation: lower-jaw 1s infinite;
+}
+
+.pacman-eye {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background-color: black;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes upper-jaw {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes upper-jaw {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes lower-jaw {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}

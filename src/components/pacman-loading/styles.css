@@ -1,69 +1,19 @@
-.pacman {
-  position: relative;
-  width: 50px;
+.pacman-laoding-container {
+  width: 150px;
   height: 50px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.upper-jaw {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: bottom center;
-  animation: upper-jaw 1s infinite;
+.pacman {
+  animation: pacman-animation 3s infinite linear;
 }
 
-.lower-jaw {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform-origin: top center;
-  animation: lower-jaw 1s infinite;
-}
-
-.pacman-eye {
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background-color: black;
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes upper-jaw {
+@keyframes pacman-animation {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(-200%);
   }
-  50% {
-    transform: rotate(-30deg);
-  }
-  100%{
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes upper-jaw {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-30deg);
-  }
-  100%{
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes lower-jaw {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  100%{
-    transform: rotate(0deg);
+  100% {
+    transform: translateX(200%);
   }
 }
