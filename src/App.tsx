@@ -1,16 +1,12 @@
-import { Suspense } from "react";
-import "./App.css";
-import { RouterProvider } from "react-router";
-import router from "./routes";
+import PacmanLoading from "./components/pacman-loading"
 
 function App() {
+
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <div className="App">
-        <RouterProvider router={router} />
-      </div>
-    </Suspense>
-  );
+    <div>
+      <PacmanLoading />
+    </div>
+  )
 }
 
-export default App;
+export default App
