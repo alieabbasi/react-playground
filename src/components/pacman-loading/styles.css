@@ -1,4 +1,4 @@
-.pacman-laoding-container {
+.pacman-loading-container {
   width: 150px;
   height: 50px;
   position: relative;
@@ -9,11 +9,85 @@
   animation: pacman-animation 3s infinite linear;
 }
 
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: #eec407;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+}
+
+.dot-1 {
+  left: 12.5%;
+  animation: dot-1-animation 3s infinite linear;
+}
+.dot-2 {
+  left: 25%;
+  animation: dot-1-animation 3s infinite linear 0.5s;
+}
+.dot-3 {
+  left: 37.5%;
+  animation: dot-1-animation 3s infinite linear 0.8s;
+}
+.dot-4 {
+  left: 50%;
+  animation: dot-1-animation 3s infinite linear 1.1s;
+}
+.dot-5 {
+  left: 62.5%;
+  animation: dot-1-animation 3s infinite linear 1.3s;
+}
+.dot-6 {
+  left: 75%;
+  animation: dot-1-animation 3s infinite linear 1.6s;
+}
+.dot-7 {
+  left: 87.5%;
+  animation: dot-1-animation 3s infinite linear 1.9s;
+}
+
 @keyframes pacman-animation {
   0% {
     transform: translateX(-200%);
   }
   100% {
     transform: translateX(200%);
+  }
+}
+
+@keyframes dot-1-animation {
+  0% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  24.1%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dot-2-animation {
+  0% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  24.1%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
